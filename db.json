@@ -1,0 +1,10 @@
+{
+    "recipes": [
+        {
+            "id": 1,
+            "name": "Omelette", 
+            "description": "A folded pancake made of eggs with some additional vegetables, cheese, and meat"
+        }
+   
+    ]
+}
