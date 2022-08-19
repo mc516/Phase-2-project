@@ -1,6 +1,6 @@
 body {
   text-align: center;
-  
+  background-color: aquamarine;
 }
 
 .nav-links {
@@ -34,4 +34,15 @@ body {
   margin: auto;
   border-width: 1px;
   padding: 10px;
+}
+
+.description {
+  font-size:large;
+}
+
+.ingredients {
+  font-size: x-large;
+  color: purple;
+  margin: 0;
+  padding: 5px;
 }
