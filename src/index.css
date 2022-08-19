@@ -1,6 +1,12 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 body {
   text-align: center;
-  background-color: aquamarine;
+  background-color: white;
 }
 
 .nav-links {
@@ -56,4 +62,22 @@ body {
 
 .new-recipe-btn {
   margin: 5px;
+}
+
+.form-container {
+  text-align: center;
+  width: 50%;
+  display: inline-block;
+}
+
+.form {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.new-recipe-submit {
+  margin-top: 10px;
+  padding: 5px;
 }

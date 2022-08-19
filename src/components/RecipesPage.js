@@ -10,12 +10,18 @@ function Recipes() {
         .then(data => setRecipeList(data))
     }, [])
 
+    if(!recipeList) return <h2>Loading...</h2>
+    
+    function handleClick() {
+        console.log("click")
+    }
 
     return (
         <div>
+            
             <h1>Recipes Page</h1>
-            {recipeList.map(recipe => {return <Recipe recipeData={recipe}/>} )}
-            <button className="new-recipe-btn">Add new recipe!</button>
+            {recipeList.map(recipe => {return <Recipe key={recipe.name} recipeData={recipe}/>} )}
+            {<button className="new-recipe-btn" onClick={handleClick}>Add new recipe!</button>}
         </div>
        
     )
