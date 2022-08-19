@@ -7,6 +7,7 @@
 body {
   text-align: center;
   background-color: white;
+  padding-bottom: 100px;
 }
 
 .nav-links {
@@ -16,10 +17,6 @@ body {
 
 .home {
   padding: 15px;
-}
-
-.random-recipe-btm {
-  margin: 20px;
 }
 
 .personal-image {
@@ -40,6 +37,7 @@ body {
   margin: auto;
   border-width: 1px;
   padding: 25px;
+  
 }
 
 .image {

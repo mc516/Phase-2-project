@@ -11,8 +11,7 @@ function Recipes() {
     }, [])
 
     return (
-        <div>
-            
+        <div>          
             <h1>Recipes Page</h1>
             {recipeList.map(recipe => {return <Recipe key={recipe.name} recipeData={recipe}/>} )}      
         </div>      

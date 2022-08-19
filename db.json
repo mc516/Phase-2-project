@@ -1,19 +1,25 @@
 {
-    "recipes": [
-        {
-            "id": 1,
-            "name": "Omelette", 
-            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEX0SekDK65OHWFCSqEYFgOXLwy7XDWz6H-Q&usqp=CAU",
-            "ingredients": "2 eggs, Water, Pinch of salt, Pinch of pepper, Filling  ingredients",
-            "description": "A folded pancake made of eggs with some additional vegetables, cheese, and meat"
-        },
-        {
-            "id": 2,
-            "name": "Kimchi Pancake", 
-            "image":"https://www.koreanbapsang.com/wp-content/uploads/2010/02/DSC0780-2-e1644441498766.jpg",
-            "ingredients": "1/2 pounch sliced kimchi, 1/2 cup flour, 1/2 cup water, 3 scallions chopped, vegetable oil",
-            "description": "A korean style pancake primarily made of sliced kimchi, flour batter, and sometimes other vegetables"
-        }
-   
-    ]
+  "recipes": [
+    {
+      "id": 1,
+      "name": "Omelette",
+      "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEX0SekDK65OHWFCSqEYFgOXLwy7XDWz6H-Q&usqp=CAU",
+      "ingredients": "2 eggs, Water, Pinch of salt, Pinch of pepper, Filling  ingredients",
+      "description": "A folded pancake made of eggs with some additional vegetables, cheese, and meat"
+    },
+    {
+      "id": 2,
+      "name": "Kimchi Pancake",
+      "imageURL": "https://www.koreanbapsang.com/wp-content/uploads/2010/02/DSC0780-2-e1644441498766.jpg",
+      "ingredients": "1/2 pounch sliced kimchi, 1/2 cup flour, 1/2 cup water, 3 scallions chopped, vegetable oil",
+      "description": "A korean style pancake primarily made of sliced kimchi, flour batter, and sometimes other vegetables"
+    },
+    {
+      "name": "asd",
+      "imageURL": "wad",
+      "ingredients": "124",
+      "description": "213",
+      "id": 3
+    }
+  ]
 }
