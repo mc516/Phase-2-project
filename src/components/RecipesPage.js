@@ -10,10 +10,15 @@ function Recipes() {
         .then(data => setRecipeList(data))
     }, [])
 
+    const recipesToDisplay = recipeList.sort((a, b) => a.name.localeCompare(b.name))
     return (
         <div>          
             <h1>Recipes Page</h1>
-            {recipeList.map(recipe => {return <Recipe key={recipe.name} recipeData={recipe}/>} )}      
+            {
+                recipeList
+                .sort((a, b) => a.name.localeCompare(b.name))
+                .map(recipe => {return <Recipe key={recipe.name} recipeData={recipe}/>})
+            }      
         </div>      
     )
 }
