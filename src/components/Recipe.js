@@ -5,7 +5,7 @@ function Recipe({recipeData}) {
     return (
         <div className="recipe-card">
             <div className="name">{name}</div>
-            <img src={image} alt={name}/> 
+            <img className="image" src={image} alt={name}/> 
             <div className="description">{description}</div>
             <div className="ingredients">{ingredients}</div>
         </div>  
