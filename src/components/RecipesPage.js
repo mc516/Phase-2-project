@@ -15,6 +15,7 @@ function Recipes() {
         <div>
             <h1>Recipes Page</h1>
             {recipeList.map(recipe => {return <Recipe recipeData={recipe}/>} )}
+            <button className="new-recipe-btn">Add new recipe!</button>
         </div>
        
     )

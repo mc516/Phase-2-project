@@ -8,7 +8,7 @@ function Recipe({recipeData}) {
             <img className="image" src={image} alt={name}/> 
             <div className="description">{description}</div>
             <div className="ingredients">{ingredients}</div>
-            <button className="new-recipe-btn">Add new recipe!</button>
+            
          </div>  
     )
 }
