@@ -4,8 +4,9 @@ function NavBar() {
     return ( 
         <div>
             <NavLink className="nav-links" exact to="/">Home</NavLink>
-            <NavLink className="nav-links" exact to="/about">About</NavLink>
+            <NavLink className="nav-links" to="/about">About</NavLink>
             <NavLink className="nav-links" exact to="/recipes">Recipes</NavLink>
+            <NavLink className="nav-links" to="/recipes/new">Add Recipe</NavLink>
         </div>
     )
 }
