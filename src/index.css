@@ -25,7 +25,13 @@ body {
   border-radius: 0.5px;
   border-color: purple;
   width: 50%;
-  margin: auto;
-  
+  margin: auto;  
+}
 
+.recipe-card {
+  border-style: solid;
+  width: 50%;
+  margin: auto;
+  border-width: 1px;
+  padding: 10px;
 }

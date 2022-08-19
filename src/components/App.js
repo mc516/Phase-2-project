@@ -1,7 +1,7 @@
 import React from "react";
 import Home from "./Home"
 import About from "./About"
-import Recipes from "./Recipes";
+import Recipes from "./RecipesPage";
 import NavBar from "./NavBar";
 import {Route, Switch} from "react-router-dom"
 
