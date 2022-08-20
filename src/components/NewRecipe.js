@@ -27,9 +27,7 @@ function NewRecipe() {
             body: JSON.stringify(formData)
         })
         .then(res => res.json())
-        .then(data => {
-            history.push("/recipes")
-            console.log(data)})
+        .then(() => history.push("/recipes"))   
     }
 
     return (

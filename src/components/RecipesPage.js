@@ -12,7 +12,6 @@ function Recipes() {
     }, [])
 
     function handleDeleteRecipe(deletedRecipe) {
-        console.log(deletedRecipe)
         const updatedRecipes = recipeList.filter(recipe => { 
             return recipe.id !== deletedRecipe.id});
         setRecipeList(updatedRecipes)

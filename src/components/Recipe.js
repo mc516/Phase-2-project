@@ -4,11 +4,12 @@ function Recipe( {recipeData, handleDeleteRecipe} ) {
     const {name ,imageURL, description, ingredients, id} = recipeData;
 
     function handleDeleteClick() {
-        fetch(`http://localhost:3001/recipes/${id}`, {
-            method:"DELETE",
-        })
-        .then(res => res.json())
-        .then(() => handleDeleteRecipe(recipeData))
+        if (window.confirm('Are you sure you wish to delete this item?')) 
+        return  fetch(`http://localhost:3001/recipes/${id}`, {
+                    method:"DELETE",
+                })
+                .then(res => res.json())
+                .then(() => handleDeleteRecipe(recipeData))
     }
 
     return (
