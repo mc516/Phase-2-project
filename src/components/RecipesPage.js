@@ -12,7 +12,9 @@ function Recipes() {
     }, [])
 
     function handleDeleteRecipe(deletedRecipe) {
-        const updatedRecipes = recipeList.filter(recipe => recipe.id !== deletedRecipe.id);
+        console.log(deletedRecipe)
+        const updatedRecipes = recipeList.filter(recipe => { 
+            return recipe.id !== deletedRecipe.id});
         setRecipeList(updatedRecipes)
     }
 
@@ -22,8 +24,8 @@ function Recipes() {
         } else {
             return true
         }
-
     })
+    
     return (
         <div>          
             <h1>Recipes Page</h1>
