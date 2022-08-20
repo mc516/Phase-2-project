@@ -15,25 +15,11 @@
       "description": "A korean style pancake primarily made of sliced kimchi, flour batter, and sometimes other vegetables"
     },
     {
-      "name": "asd",
-      "imageURL": "wad",
-      "ingredients": "124",
-      "description": "213",
-      "id": 3
-    },
-    {
       "name": "test",
       "imageURL": "test",
       "ingredients": "test",
       "description": "test",
       "id": 4
-    },
-    {
-      "name": "awe",
-      "imageURL": "awd2",
-      "ingredients": "awdaw",
-      "description": "awd2",
-      "id": 5
     }
   ]
 }

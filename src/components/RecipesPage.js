@@ -11,10 +11,9 @@ function Recipes() {
         .then(data => setRecipeList(data))
     }, [])
 
-    
-    function handleSearch(e) {
-        console.log(e.target.value)
-        setSearch(e.target.value)
+    function handleDeleteRecipe(deletedRecipe) {
+        const updatedRecipes = recipeList.filter(recipe => recipe.id !== deletedRecipe.id);
+        setRecipeList(updatedRecipes)
     }
 
     const recipesToDisplay = recipeList.filter(recipe => {
@@ -29,12 +28,12 @@ function Recipes() {
         <div>          
             <h1>Recipes Page</h1>
             <label htmlFor="search">Search: </label>
-            <input className="search-bar" type="text" onChange={handleSearch}></input>
+            <input className="search-bar" type="text" onChange={(e) => setSearch(e.target.value)}></input>
             <div></div>
             {
                 recipesToDisplay
                 .sort((a, b) => a.name.localeCompare(b.name))
-                .map(recipe => {return <Recipe key={recipe.name} recipeData={recipe}/>})
+                .map(recipe => {return <Recipe key={recipe.name} recipeData={recipe} handleDeleteRecipe={handleDeleteRecipe}/>})
             }      
         </div>      
     )
