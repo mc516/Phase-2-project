@@ -65,6 +65,8 @@ function NewRecipe() {
                 <button type="submit" className="new-recipe-submit">Submit</button>
 
             </form>
+            <h3>Preview Image</h3>
+            <img src={imageURL} />
         </div>
     )
 }
