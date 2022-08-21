@@ -4,6 +4,7 @@ function About() {
     return (
         <div>
             <h1>About Me</h1>
+            
             <img className="personal-image"src="https://media.istockphoto.com/vectors/male-face-silhouette-or-icon-man-avatar-profile-unknown-or-anonymous-vector-id1087531642?k=20&m=1087531642&s=612x612&w=0&h=D6OBNUY7ZxQTAHNVtL9mm2wbHb_dP6ogIsCCWCqiYQg=" alt="mystery person"/>
             <br></br>
             <h3 className="biography">
