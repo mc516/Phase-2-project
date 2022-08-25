@@ -5,7 +5,7 @@ Keep track of all your delicious recipes right here!
 A recipe page that displays all of your recipes that can be filtered via the search bar.
 ![alt-text](./ReadmeImages/recipes%20page.png)
 
-Add a new recipe to your book and check out the image preview before submitting.
+Add or delete a recipe from your book and check out the image preview before submitting.
 ![alt-text](./ReadmeImages/Add%20new%20recipe.png)
 
 Also includes an about me page to personalize for anyone who wishes to continue using this app.

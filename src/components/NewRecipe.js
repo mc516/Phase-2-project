@@ -2,32 +2,36 @@ import React, { useState } from "react";
 import { useHistory } from "react-router-dom"
 
 function NewRecipe() {
-    const [name, setName] = useState("")
-    const [imageURL, setImageURL] = useState("")
-    const [description, setDescription] = useState("")
-    const [ingredients, setIngredients] = useState("")
+    const [recipeObject, setRecipeObject] = useState({
+        name:"",
+        imageURL:"",
+        description:"",
+        ingredients:"",
+    })
 
     const history = useHistory();
+
+    function handleChange(e) {
+        setRecipeObject({
+            ...recipeObject, 
+            [e.target.id]: e.target.value
+        })
+    }
 
     function handleSubmit(e) {
         e.preventDefault()
         console.log("submit!")
 
-        const formData = {
-            name, 
-            imageURL, 
-            ingredients,
-            description, 
-        }
         fetch("http://localhost:3001/recipes", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify(formData)
+            body: JSON.stringify(recipeObject)
         })
         .then(res => res.json())
         .then(() => history.push("/recipes"))   
+
     }
 
     return (
@@ -38,35 +42,37 @@ function NewRecipe() {
                 <input 
                     id="name"
                     type="text" 
-                    // value={name}
-                    onChange={e => setName(e.target.value)}
+                    value={recipeObject.name}
+                    onChange={handleChange}
                 />
 
                 <label htmlFor="imageURL">Image URL</label>
                 <input 
                     id="imageURL"
                     type="text"
-                    // value={null}
-                    onChange={e => setImageURL(e.target.value)}
+                    value={recipeObject.imageURL}
+                    onChange={handleChange}
                 />
 
                 <label htmlFor="description">Description</label>
                 <textarea  
                     id="description"
-                    onChange={e => setDescription(e.target.value)}
+                    value={recipeObject.description}
+                    onChange={handleChange}
                 />
 
                 <label htmlFor="ingredients">Ingredients</label>
                 <textarea  
                     id="ingredients"
-                    onChange={e => setIngredients(e.target.value)}
+                    value={recipeObject.ingredients}
+                    onChange={handleChange}
                 />   
 
                 <button type="submit" className="new-recipe-submit">Submit</button>
 
             </form>
             <h3>Preview Image</h3>
-            <img src={imageURL} />
+            <img src={recipeObject.imageURL} alt={recipeObject.name} />
         </div>
     )
 }
